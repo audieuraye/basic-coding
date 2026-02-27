@@ -1,0 +1,631 @@
+ @import url('https://fonts.googleapis.com/css2?family=Almendra+SC&family=Aoboshi+One&family=M+PLUS+Rounded+1c&family=Noto+Serif+JP:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sofia&family=UnifrakturMaguntia&family=Zen+Old+Mincho&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(63, 37, 18);
+}
+
+.banner-wrapper {
+    width: 990px;
+    height: 773px;
+    display: grid;
+    position: relative;
+    margin: 0 auto;       
+}
+
+.banner-wrapper > * {
+    grid-area: 1 / 1;
+}
+
+.banner-wrapper > .swiper {
+    width: 990px;
+    height: 773px;
+    position: relative;
+    z-index: 1;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-overlay {
+    width: 990px;
+    height: 773px;
+    background: rgba(0,0,0,.35);
+    position: relative;
+    z-index: 2;
+}
+
+.top-image {
+    width: 990px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    z-index: 3;
+}
+
+.top-image img {
+    width: 990px;
+    height: 373px;
+    margin-top: -55px;
+  
+}
+
+.navibox {
+    width: 907px;
+    height: 107px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    z-index: 4;
+    place-self: end center;
+    transform: translateY(40px);
+}
+
+.navibutton {
+    display: flex;                    
+    justify-content: space-between;    
+    align-items: center;               
+    width: 100%;                       
+    list-style: none;
+    padding: 0 20px;
+    margin: 0;
+    z-index: 2;
+}
+
+.navibutton li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    padding: 20px;
+    color: #fff;                       
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.25s ease;
+    margin-top: -73px;
+}
+
+.navibutton li a:hover {
+    transform: scale(1.05);
+    color: #f4e1a1;                   
+}
+
+.hotel-section {
+    width: 990px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center; 
+}
+
+.hotel-bg {
+    grid-area: 1 / 1;
+    width: 100%;
+}
+
+.hoteltext {
+    grid-area: 1 / 1;
+    width: 680px;
+    z-index: 2;
+    transform: translateY(-440px); 
+}
+
+.swiper-showcase {
+  width: 990px;
+  height: 500px;
+  overflow: hidden;
+  margin: -900px auto 0;
+  position: relative;
+  z-index: 5;
+}
+
+.swiper-showcase .swiper-slide {
+  width: 374px;
+  height: auto;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  transform: scale(0.85);
+}
+
+.swiper-showcase .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.slide-text {
+  margin-top: 10px;
+  text-align: left;
+  color: #fff;
+  line-height: 1.6;
+  padding: 14px;
+  font-family: "Noto Serif JP", serif;
+}
+
+.slide-inner {
+  background: #491f04;          
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+  min-height: 474px;
+}
+
+.slide-inner img {
+  width: 100%;
+  height: 273px;  
+  object-fit: cover;
+  display: block;
+  padding: 5px;
+}
+
+.swiper-showcase .swiper-wrapper {
+  overflow: visible;
+}
+
+.slide-text3{
+    margin-top: 40px;
+}
+
+.button-hotel {
+    width: 697px;
+    margin: 60px auto 0;      
+}
+
+.button-hotel img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.button1 {
+    margin-bottom: 30px;
+}
+
+.button1:hover img {
+    transform: scale(1.005) translateY(-2px);
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.25));
+}
+
+.button2:hover img {
+    transform: scale(1.005) translateY(-2px);
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.25));
+}
+
+.parents-section {
+    width: 990px;
+    margin: 50px auto 0; 
+    position: relative;
+    display: grid;
+    justify-items: center; 
+}
+
+.parents-bg {
+    width: 100%;
+    height: auto;
+    display: block;       
+}
+
+.parentstitle {
+    width: 540px;
+    position: absolute;
+    top: 120px;
+}
+
+.collage {
+    width: 813px;
+    height: 802px;      
+    margin: 0 auto;
+    position: relative;
+    top: -1100px;
+}
+
+.collage .img {
+    position: absolute;
+}
+
+.img-top {
+    top: 0;
+    left: 15px;
+    z-index: 3;
+}
+
+.img-center {
+    top: 135px;
+    left: 270px;
+    z-index: 2; /* paling depan */
+}
+
+.img-bottom {
+    top: 500px;
+    left: 25px;
+    z-index: 1;
+}
+
+.texthotel {
+    position: relative;
+    top: -1280px;
+    color: #491f04;
+    left: 800px;         
+    width: 377px;            
+    text-align: justify;     
+    line-height: 1.6;     
+    font-family: "Noto Serif JP", serif;
+    font-size: 19px;
+}
+
+.parents-button {
+    width: 709px;
+    margin: 0 auto;       
+    margin-top: -1130px; 
+    position: relative;
+}
+
+.parents-button img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.parents-button:hover img {
+    transform: scale(1.005) translateY(-2px);
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.25));
+}
+
+.sparkles {
+    position: relative; /* anchor */
+}
+.sparklespop {
+    position: absolute; /* biar nempel bebas */
+    top: -1180px;        /* naik / turun */
+    left: 380px;        /* geser kanan kiri */
+    z-index: 10;        /* di atas elemen lain */
+}
+
+.camping-section {
+    width: 990px;
+    margin: 50px auto 0; 
+    position: relative;
+    display: grid;
+    justify-items: center; 
+}
+
+.camp-bg {
+    width: 100%;
+    height: auto;
+    display: block;       
+    margin-top: -9px;
+}
+
+.camptitle {
+    width: 540px;
+    position: absolute;
+    top: 40px;
+}
+
+/* WRAPPER SWIPER */
+.swiper-movie {
+  position: relative;
+  width: 100%;
+  height: 294px; /* bebas, sesuaikan */
+  overflow: visible;
+}
+
+/* ANIMASI BG */
+@keyframes bgScroll {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -1000px;
+  }
+}
+
+/* WRAPPER SLIDE */
+.swiper-movie .swiper-wrapper {
+  align-items: center;
+}
+
+/* SLIDE */
+.swiper-movie .swiper-slide {
+  width: 291px; /* sesuai request */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+/* IMAGE */
+.swiper-movie .swiper-slide img {
+  width: 291px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* CLIPPING LAYER */
+.swiper-movie-clip {
+  width: 990px;
+  height: 294px;
+  overflow: hidden;
+  position: relative;
+  margin: -1040px auto 0; /* kalau mau naik */
+  z-index: 5;
+}
+
+.swiper-movie .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.textcamp {
+    position: relative;
+    color: #491f04;       
+    width: 800px;          
+    top: 80px;  
+    text-align: justify;     
+    line-height: 1.6;     
+    font-family: "Noto Serif JP", serif;
+    font-size: 28px;
+    margin: 0 auto; 
+}
+
+.buttoncamp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Grup pertama (food) */
+.button-camping1 {
+  position: relative;
+  width: 795px; /* total width kedua buttonfood */
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Background food */
+.button-camping1 .buttonfood1,
+.button-camping1 .buttonfood2 {
+  width: 366px; /* sesuai img */
+  height: auto;
+  margin-top: 180px;
+}
+
+/* Button press di atas food */
+.button-camping2 {
+  position: relative;
+  width: 673px; /* total width kedua buttonpress */
+  display: flex;
+  justify-content: space-between;
+  margin-top: -83px; /* geser ke atas biar menempel di food, sesuaikan */
+  z-index: 2; /* pastikan di atas bg */
+}
+
+.button-camping2 .buttonpress1,
+.button-camping2 .buttonpress2 {
+  width: 244px; /* sesuai img */
+  cursor: pointer;
+  transition: transform 0.25s ease, filter 0.25s ease;
+  filter: drop-shadow(0 5px 10px rgba(0,0,0,0.3));
+}
+
+.button-camping2 .buttonpress1:hover,
+.button-camping2 .buttonpress2:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.4));
+}
+
+.buffet-section {
+    width: 990px;
+    margin: 50px auto 0; 
+    position: relative;
+    display: grid;
+    justify-items: center; 
+}
+
+.buffet-bg {
+    width: 100%;
+    height: auto;
+    display: block;       
+    margin-top: 90px;
+}
+
+.buffettitle {
+    width: 478px;
+    position: absolute;
+    top: 190px;
+}
+
+
+.swiper-strip {
+  position: relative;
+  width: 100%;
+  height: 320px; /* bebas, sesuaikan */
+  overflow: visible;
+}
+
+/* ANIMASI BG */
+@keyframes bgScroll {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -1000px;
+  }
+}
+
+/* WRAPPER SLIDE */
+.swiper-strip .swiper-wrapper {
+  align-items: center;
+}
+
+/* SLIDE */
+.swiper-strip .swiper-slide {
+  width: 328px; /* sesuai request */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+/* IMAGE */
+.swiper-strip .swiper-slide img {
+  width: 328px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* CLIPPING LAYER */
+.swiper-clip {
+  width: 990px;
+  height: 320px;
+  overflow: hidden;
+  position: relative;
+  margin: -1120px auto 0; /* kalau mau naik */
+  z-index: 5;
+}
+
+.swiper-strip .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.textbuffet {
+    position: relative;
+    color: #491f04;       
+    width: 728px;          
+    top: 80px;  
+    text-align: justify;     
+    line-height: 2;     
+    font-family: "Noto Serif JP", serif;
+    font-size: 19px;
+    margin: 0 auto; 
+}
+
+.plaque-rate {
+    width: 446px;
+    margin: 0 auto;       
+    margin-top: 150px; 
+    position: relative;
+}
+
+.plaque-rate img {
+    width: 100%;
+    height: auto;
+}
+
+.textbuffet2 {
+    position: relative;
+    color: #491f04;       
+    width: 728px;          
+    top: 60px;  
+    text-align: justify;     
+    line-height: 2;     
+    font-family: "Noto Serif JP", serif;
+    font-size: 19px;
+    margin: 0 auto; 
+}
+
+.last-section {
+    width: 990px;
+    margin: 50px auto 0; 
+    position: relative;
+    display: grid;
+    justify-items: center; 
+}
+
+.button-bg {
+    width: 100%;
+    height: auto;
+    display: block;       
+    margin-top: 105px;
+}
+
+.ticketbutton {
+    width: 625px;
+    position: absolute;
+    top: 220px;
+    margin-left: -310px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ticketbutton:hover {
+    transform: scale(1.005) translateY(-2px);
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.25));
+}
+
+.button-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Grup pertama (food) */
+.button-anajal {
+  position: relative;
+  width: 775px; /* total width kedua buttonfood */
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Background food */
+.button-anajal .buttonjal,
+.button-anajal .buttonana {
+  width: 366px; /* sesuai img */
+  height: auto;
+  margin-top: -345px;
+}
+
+/* Button press di atas food */
+.anajal {
+  position: relative;
+  width: 724px; /* total width kedua buttonpress */
+  display: flex;
+  justify-content: space-between;
+  margin-top: -215px; /* geser ke atas biar menempel di food, sesuaikan */
+  z-index: 2; /* pastikan di atas bg */
+}
+
+.anajal .jalpress,
+.anajal .anapress {
+  width: 313px; /* sesuai img */
+  cursor: pointer;
+  transition: transform 0.25s ease, filter 0.25s ease;
+  filter: drop-shadow(0 5px 10px rgba(0,0,0,0.2));
+}
+
+.anajal .jalpress:hover,
+.anajal .anapress:hover {
+  transform: scale(1.02);
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+}
+
+.anajal .jalpress {
+    margin-left: -3px;
+}
+
+.anajal .anapress {
+  margin-right: 6px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#navi4 {
+  scroll-margin-top: -90px; /* sesuaikan */
+}
+
+@media (max-width: 480px) {
+    .swiper {
+        width: unset;
+        height: unset;
+        max-width: 400px;
+        max-height: 300px;
+    }
+}
