@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&family=Aoboshi+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sofia&family=UnifrakturMaguntia&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../css/img/vintage.jpg);
+    background-attachment: scroll; /* FIXED DIGANTI */
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), 
+}
+
+/*nanti dah pusing ini */
+.main-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #f3eee5cc; /* creamy vintage */
+    padding: 60px 80px;
+    min-height: 100vh;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15); /* biar ga lag hhh ringan */
+}
+
+h1{
+    background-color: blanchedalmond;
+    border-radius: 50px;
+    margin: 30px 60px 80px 60px;
+    text-align: center;
+    font-size: 80px;
+    padding: 50px;
+    color: rgb(156, 124, 43);
+    font-family: "Playfair Display", serif;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.frame-main{
+    width: fit-content;
+    margin: 50px auto; 
+    padding: 50px; /* jarak antara stamps dan gambar */
+    background-image: url(../css/img/stamps.jpg);
+    display: block;
+    border-radius: 50px;
+}
+
+.frame-main img{
+    display: block;
+    margin: 0 auto;
+    width: 600px;   /* KUNCI: tentuin ukuran FIX biar dia ga melebar */
+    max-width: 100%; /* stop autofit */
+    padding: 0; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* animasi smooth */
+}
+
+.frame-main img:hover{
+    transform: scale(1.07);                  /* pop lebih kecil (5% lebih besar) */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3); /* shadow lebih subtle */
+}
+
+.contain{
+    background-image: url(../css/img/letters.jpg);
+    width: fit-content;
+    margin: 100px auto; 
+    padding: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    border-radius: 50px;
+}
+
+.contain ul{
+    display: flex;              /* Biar isinya berjajar ke samping */
+    gap: 150px;                  /* Jarak antar gambar */
+    list-style: none;           /* Hilangin bullet */
+}
+
+.contain ul li{
+    display: flex;
+    flex-direction: column;     /* Judul di atas gambar */
+    align-items: center;        /* Biar center */
+}
+
+.contain img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 300px;         /* samain ukuran biar beneran bulat */
+    height: 300px;
+    object-fit: cover;    /* biar nggak gepeng */
+    border-radius: 300px;   /* bikin lingkaran */
+}
+
+.img-bg{
+    background-color: rgba(118, 84, 29, 0.859);
+    padding: 7px;             /* jarak tipis seperti shadow */
+    border-radius: 300px;        /* mengikuti bentuk gambar bulat */
+    display: inline-block;     /* supaya ukurannya pas sama gambar */
+}
+
+.img-bg img{
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* animasi smooth */
+}
+
+.img-bg img:hover{
+    transform: scale(1.07);                  /* pop lebih kecil (5% lebih besar) */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3); /* shadow lebih subtle */
+}
+
+.contain ul li h3{
+    color: #4b2e0f;                     /* coklat tua, matching background */
+    font-family: 'Georgia', serif;      /* elegan tapi mudah dibaca */
+    font-size: 30px;                     /* ukuran cukup besar */
+    font-weight: bold;                   /* tegas */
+    text-align: center;                  /* center di atas gambar */
+    margin-bottom: 12px;                 /* jarak ke gambar */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* shadow lembut */
+    transition: color 0.3s ease;         /* animasi saat hover */
+}
+
+.contain ul li h3:hover{
+    color: #d99a6c;                      /* warna berubah saat hover */
+}
+
+.feline{
+    font-family: "UnifrakturMaguntia", cursive;
+    font-size: 70px;                 
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(45deg, #5C3A21, #A67C52, #C1A15A); /* coklat tua ke gold vintage */
+    -webkit-background-clip: text;  /* hanya untuk teks */
+    -webkit-text-fill-color: transparent; /* biar background muncul di teks */
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.4); /* shadow lembut supaya menonjol */
+    margin-bottom: 40px;
+}
+
+
+/* next section canine */
+.contain2{
+    background-image: url(../css/img/letters.jpg);
+    width: fit-content;
+    margin: 100px auto; 
+    padding: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    border-radius: 50px;
+}
+
+.contain2 ul{
+    display: flex;              /* Biar isinya berjajar ke samping */
+    gap: 150px;                  /* Jarak antar gambar */
+    list-style: none;           /* Hilangin bullet */
+}
+
+.contain2 ul li{
+    display: flex;
+    flex-direction: column;     /* Judul di atas gambar */
+    align-items: center;        /* Biar center */
+}
+
+.contain2 img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 300px;         /* samain ukuran biar beneran bulat */
+    height: 300px;
+    object-fit: cover;    /* biar nggak gepeng */
+    border-radius: 300px;   /* bikin lingkaran */
+}
+
+.img-bg2{
+    background-color: rgba(118, 84, 29, 0.859);
+    padding: 7px;             /* jarak tipis seperti shadow */
+    border-radius: 300px;        /* mengikuti bentuk gambar bulat */
+    display: inline-block;     /* supaya ukurannya pas sama gambar */
+}
+
+.img-bg2 img{
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* animasi smooth */
+}
+
+.img-bg2 img:hover{
+    transform: scale(1.07);                  /* pop lebih kecil (5% lebih besar) */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3); /* shadow lebih subtle */
+}
+
+.contain2 ul li h3{
+    color: #4b2e0f;                     /* coklat tua, matching background */
+    font-family: 'Georgia', serif;      /* elegan tapi mudah dibaca */
+    font-size: 30px;                     /* ukuran cukup besar */
+    font-weight: bold;                   /* tegas */
+    text-align: center;                  /* center di atas gambar */
+    margin-bottom: 12px;                 /* jarak ke gambar */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* shadow lembut */
+    transition: color 0.3s ease;         /* animasi saat hover */
+}
+
+.contain2 ul li h3:hover{
+    color: #d99a6c;                      /* warna berubah saat hover */
+}
+
+.canine{
+    font-family: "UnifrakturMaguntia", cursive;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(45deg, #5C3A21, #A67C52, #C1A15A); /* coklat tua ke gold vintage */
+    -webkit-background-clip: text;  /* hanya untuk teks */
+    -webkit-text-fill-color: transparent; /* biar background muncul di teks */
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.4); /* shadow lembut supaya menonjol */
+    margin-bottom: 40px;
+}
+
+
+/* next section birds */
+.contain3{
+    background-image: url(../css/img/letters.jpg);
+    width: fit-content;
+    margin: 100px auto; 
+    padding: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    border-radius: 50px;
+}
+
+.contain3 ul{
+    display: flex;              /* Biar isinya berjajar ke samping */
+    gap: 150px;                  /* Jarak antar gambar */
+    list-style: none;           /* Hilangin bullet */
+}
+
+.contain3 ul li{
+    display: flex;
+    flex-direction: column;     /* Judul di atas gambar */
+    align-items: center;        /* Biar center */
+}
+
+.contain3 img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 300px;         /* samain ukuran biar beneran bulat */
+    height: 300px;
+    object-fit: cover;    /* biar nggak gepeng */
+    border-radius: 300px;   /* bikin lingkaran */
+}
+
+.img-bg3{
+    background-color: rgba(118, 84, 29, 0.859);
+    padding: 7px;             /* jarak tipis seperti shadow */
+    border-radius: 300px;        /* mengikuti bentuk gambar bulat */
+    display: inline-block;     /* supaya ukurannya pas sama gambar */
+}
+
+.img-bg3 img{
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* animasi smooth */
+}
+
+.img-bg3 img:hover{
+    transform: scale(1.07);                  /* pop lebih kecil (5% lebih besar) */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3); /* shadow lebih subtle */
+}
+
+.contain3 ul li h3{
+    color: #4b2e0f;                     /* coklat tua, matching background */
+    font-family: 'Georgia', serif;      /* elegan tapi mudah dibaca */
+    font-size: 30px;                     /* ukuran cukup besar */
+    font-weight: bold;                   /* tegas */
+    text-align: center;                  /* center di atas gambar */
+    margin-bottom: 12px;                 /* jarak ke gambar */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* shadow lembut */
+    transition: color 0.3s ease;         /* animasi saat hover */
+}
+
+.contain3 ul li h3:hover{
+    color: #d99a6c;                      /* warna berubah saat hover */
+}
+
+.birds{
+    font-family: "UnifrakturMaguntia", cursive;
+    font-size: 70px;             
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(45deg, #5C3A21, #A67C52, #C1A15A); /* coklat tua ke gold vintage */
+    -webkit-background-clip: text;  /* hanya untuk teks */
+    -webkit-text-fill-color: transparent; /* biar background muncul di teks */
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.4); /* shadow lembut supaya menonjol */
+    margin-bottom: 40px;
+}
+
+.source-section {
+    background-color: beige; 
+    border-radius: 30px;
+    backdrop-filter: blur(2px);           /* blur halus */
+    padding: 50px;
+    margin: 60px 30px 30px 30px;
+    text-align: center;
+    
+}
+
+.source-section h3 {
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
+    color: #3b2a1a;   
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block; 
+    padding: 5px 15px; 
+    border-radius: 8px;
+}
+
+/* garis kecil vintage */
+.source-section h3::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background: #3b2a1a;   /* warna lebih muda supaya kontras dengan background tua */
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.source-list {
+    display: flex;
+    justify-content: center;
+    gap: 60px;       
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 100%; 
+    flex-wrap: wrap; 
+}
+
+.source-list a {
+    display: inline-block;
+    font-size: 30px;             
+    font-weight: 800;  /* lebih tebal */
+    text-decoration: none;
+    color: #3b2a1a;  
+    padding: 10px 22px;           
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08); 
+    transition: 0.25s ease;
+}
+
+.source-list a:hover {
+    background: #7a5a3e;  
+    color: #f5e6c8;        
+    transform: translateY(-3px);
+}

@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&family=Aoboshi+One&family=M+PLUS+Rounded+1c&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sofia&family=UnifrakturMaguntia&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    background-color: #04285c;
+}
+
+.topbanner {
+    width: 990px;
+    height: 418px;
+    margin: 0 auto;
+    background-image: url(img/topbanner_01.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.button {
+    position: relative;
+    background-image: url(img/middlewave.jpg);
+    width: 990px;
+    height: 262px;
+    background-position: center;
+    margin: 0 auto; /* INI yang bikin ke tengah */
+    display: block; /* jaga-jaga kalau ternyata bukan block */
+    padding-top: 120px;   /* tombol turun */
+    padding-bottom: 80px; /* jarak dari bawah wave */
+}
+
+.section-title {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 105px;
+  margin-top: -60px; /* geser ke atas 30px — sesuaikan angkanya */
+  /* kalau masih saja terlalu bawah: kurangi nilai negatifnya agar lebih ke atas */
+}
+
+.section-title img {
+  display: block;
+  margin-top: -20px;
+}
+
+.buttonlist li {
+    margin: 10px;
+}
+
+.buttonlist {
+  position: absolute;
+  display: flex;
+  gap: 80px;            /* jarak antar tombol */
+  padding: 0;
+  margin-top: 65px;
+  list-style: none;
+  justify-content: center;  
+}
+
+.content-bg {
+    width: 990px;
+    height: 1315px; /* ganti sesuai tinggi gambarnya */
+    margin: 0 auto;
+    background-image: url(img/topbanner_01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+}
+
+/* semua ramen */
+.ramen {
+    position: absolute;
+    width: 450px; 
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+}
+
+/* semua textbox */
+.textbox {
+    position: absolute;
+    width: 475px; 
+}
+
+/* ramen atas kiri */
+.ramen1 {
+    top: 50px;
+    left: 40px;
+    width: 430px;
+}
+
+/* textbox 1 (krem 1) */
+.tb1 {
+    top: 50px;
+    right: 80px;
+    width: 485px;
+}
+
+
+/* ramen tengah kanan */
+.ramen2 {
+    top: 450px;
+    right: 35px;
+}
+
+/* textbox 2 */
+.tb2 {
+    top: 450px;
+    left: 75px;
+}
+
+
+/* ramen bawah kiri */
+.ramen3 {
+    top: 880px;
+    left: 35px;
+    width: 430px;
+}
+
+/* textbox 3 */
+.tb3 {
+    top: 880px;
+    right: 75px;
+}
+
+.bottom-bg {
+    width: 990px;
+    height: 405px;
+    margin: 0 auto;
+    background-image: url(img/bottombg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    position: relative; /* WAJIB */
+}
+
+/* 10月のクーポン券 (last button) */
+.lastbutton {
+    position: absolute;
+    width: 450px;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-50%);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Akses title (アクセス) */
+.access-title {
+    position: absolute;
+    width: 170px;
+    left: 130px;
+    top: 160px;
+}
+
+/* bubble text (penjelasan stasiun) */
+.access-text {
+    position: absolute;
+    width: 890px;
+    left: 50%;
+    top: 230px;
+    transform: translateX(-50%);
+}
+
+/* pop ramen kanan bawah */
+.access-ramen {
+    position: absolute;
+    width: 180px;
+    bottom: 70px;
+    right: 80px;
+    transition: transform 0.3s ease;
+}
+
+.text {
+    position: absolute;
+    width: 380px;           
+    font-size: 22px;
+    line-height: 1.5;
+    color: #641c0e;
+    z-index: 10;
+    font-weight: 900;
+}
+
+.text1 {
+    top: 155px;   /* geser sesuai posisi */
+    right: 120px;
+}
+
+.text2 {
+    top: 580px;
+    left: 127px;
+    text-align: justify;
+    font-size: 24px;
+}
+
+.text3 {
+    top: 1000px;
+    right: 110px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* --- posisi per-subtext --- */
+.sub {
+    position: absolute;
+    width: 380px;
+    font-size: 17px;
+    line-height: 1.3;
+    color: #000000;
+    z-index: 10;
+}
+
+/* posisi subtext */
+.subtext1 {
+    top: 300px;
+    right: 120px;
+}
+
+.subtext2 {
+    top: 710px;
+    left: 115px;
+}
+
+.subtext3 {
+    top: 1160px;
+    right: 125px;
+}
+
+.text, .sub {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section {
+    position: relative;
+    width: 990px;
+    margin: 0 auto;
+    height: 450px; /* sesuaikan tinggi wrapper dengan tinggi konten */
+}
+
+/* === Scroll offset agar tombol scroll tepat === */
+#textbox1-wrapper,
+#textbox2-wrapper,
+#textbox3-wrapper {
+    scroll-margin-top: 120px; /* sesuaikan dengan tinggi header jika ada */
+}
+
+/* === Scroll offset agar tombol scroll tepat === */
+#textbox1,
+#textbox2,
+#textbox3 {
+    scroll-margin-top: 120px; /* sesuaikan dengan tinggi topbanner jika ada */
+}
+
+/*ANIMASI AAAAA*/
+.buttonlist li a img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.buttonlist li a img:hover {
+    transform: scale(1.1); /* nge-pop 10% */
+}
+
+.lastbutton:hover {
+    transform: translateX(-50%) scale(1.1); /* tetap di tengah + nge-pop */
+}
+
+/* Hover efek sway lembut */
+.ramen:hover {
+    animation: ramen-sway 1.8s linear infinite;
+}
+
+@keyframes ramen-sway {
+    0%   { transform: scale(1.05) rotate(0deg); }
+    25%  { transform: scale(1.05) rotate(-3deg); }
+    50%  { transform: scale(1.05) rotate(0deg); }
+    75%  { transform: scale(1.05) rotate(3deg); }
+    100% { transform: scale(1.05) rotate(0deg); }
+}
+
+.access-ramen:hover {
+    animation: popramen-wobble 0.8s ease-in-out infinite;
+}
+
+@keyframes popramen-wobble {
+    0%   { transform: rotate(0deg) scale(1); }
+    15%  { transform: rotate(-5deg) scale(1.05); }
+    30%  { transform: rotate(3deg) scale(1.05); }
+    45%  { transform: rotate(-3deg) scale(1.05); }
+    60%  { transform: rotate(2deg) scale(1.05); }
+    75%  { transform: rotate(-1deg) scale(1.05); }
+    100% { transform: rotate(0deg) scale(1); }
+}
+
+.access-title-hover {
+    display: none;
+    position: absolute;
+    width: 170px;
+    left: 130px;
+    top: 160px;
+}
+
+/* Swap saat hover PNG */
+.access-title:hover {
+    display: none;
+}
+
+.access-title:hover + .access-title-hover {
+    display: block;
+}
+
+.wrapper {
+    width: 990px; /* lebar desktop asli */
+    transform-origin: top center;
+    margin: 0 auto;
+}
+
+@media (max-width: 990px) {
+    .wrapper {
+        transform: scale(calc(100vw / 990));
+    }
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&family=Aoboshi+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sofia&family=UnifrakturMaguntia&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/metamorphsis.jpg);
+}
+
+h1{
+    background-image: url(img/moths.jpg);
+    border-radius: 35px;
+    margin: 40px;
+    text-align: center;
+    font-size: 80px;
+    padding: 40px;
+    font-family: "Almendra SC", serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #6f4a2c; /* coklat vintage */
+    text-shadow: 3px 3px 8px rgba(0,0,0,0.5), -2px -2px 4px rgba(255,255,255,0.4);
+    transition: color 0.3s ease-in-out; /* transisi smooth untuk hover */
+}
+
+/* Hover effect untuk judul homepage */
+h1:hover {
+    color: #9d7e2d; /* warm gold vintage */
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    text-align: center;
+}
+
+.nav li {
+    list-style: none;
+    width: 33.33%; /* 3 tombol per baris */
+}
+
+.nav li a {
+    background-image: url(img/musicnotes.jpg);
+    background-size: cover;
+    display: block;
+    padding: 40px;
+    border-radius: 35px;
+    font-size: 48px;
+    font-family: "Georgia", serif;
+    font-weight: 700;
+    color: #3b2a1a;
+    background-color: rgba(255,245,230,0.65);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5), -1px -1px 3px rgba(255,255,255,0.5);
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    white-space: normal;   /* biar bisa wrap ke baris baru */
+    word-break: break-word;/* pecah kata kalau panjang */
+    line-height: 1.2;      /* jarak antar baris */
+    text-align: center; 
+}
+
+.nav li a:hover {
+    transform: scale(1.05);
+    background-image: url(img/vintagescrapsbg.jpg);
+    background-color: rgba(255,240,210,0.75);
+    filter: brightness(1.1);
+}

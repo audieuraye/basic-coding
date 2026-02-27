@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Noto+Serif+JP:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-image: url(../css/img/darkvintage.jpg);
+    background-position: center;
+    color: #3b2a1a; /
+}
+
+.all-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #f3eee5cc; /* creamy vintage */
+    padding: 60px 80px;
+    min-height: 100vh;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15); /* biar ga lag hhh ringan */
+}
+
+/* ========== MAIN WRAPPER ========== */
+.main-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    min-height: 100vh;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    border-radius: 20px;
+}
+
+/* ========== HEADINGS ========== */
+h1 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 50px;
+    text-align: center;
+    color: #4b2e0f; /* coklat tua */
+    margin-bottom: 20px;
+    padding-top: 30px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    position: relative;
+    background: linear-gradient(45deg, #5C3A21, #A67C52, #C1A15A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 4px;
+    margin: 12px auto 0;
+    border-radius: 2px;
+    background: #d9c3a3; /* gold */
+}
+
+h2 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 28px;
+    text-align: center;
+    color: #5C3A21; /* coklat medium */
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #4b2e0f;
+    margin-bottom: 10px;
+}
+
+/* ========== TABLES ========== */
+table {
+    border-collapse: collapse;
+    width: 100%;           /* dikurangi dari 90% ke 70% */
+    max-width: 800px;     /* batasi maksimal agar tidak terlalu lebar */
+    margin: 20px auto 40px;
+    background: #fdf6ec; 
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+th, td {
+    padding: 10px 15px;
+    text-align: center;
+    border-bottom: 1px solid #d9c3a3; /* gold/coklat lembut */
+}
+
+th {
+    background: #a67c52; /* coklat/gold */
+    color: #fff;
+    font-weight: 700;
+}
+
+td:first-child {
+    background: #d9c3a3; /* gold lembut */
+    font-weight: bold;
+    border-bottom: 1px solid #a67c52; /* warna coklat/gold lebih kontras */
+}
+
+/* ========== BUTTONS / LINKS ========== */
+a.button {
+    display: inline-block;
+    background: #83674c; /* coklat medium */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+a.button:hover {
+    background: #d9c3a3; /* gold */
+    color: #3b2a1a;
+    transform: translateY(-2px);
+}
+
+/* ========== FORM ELEMENTS ========== */
+form input,
+form select,
+form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 12px;
+    border: 1px solid #c3b49a;
+    border-radius: 8px;
+    margin: 10px 0;
+    font-size: 16px;
+    background: #fdf6ec;
+    color: #3b2a1a;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background: #83674c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.25s;
+}
+
+input[type="submit"]:hover {
+    background: #d9c3a3;
+    color: #3b2a1a;
+}
+
+/* ========== SOURCE SECTION ========== */
+.source-section {
+    background: #654b34; /* coklat tua */
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 60px 0;
+}
+
+.source-section h3 {
+    font-size: 28px;
+    color: #f5e6c8; /* cream */
+    margin-bottom: 15px;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.source-section h3::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background: #d9c3a3;
+    display: block;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+.source-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.source-list a {
+    display: inline-block;
+    background: #83674c;
+    color: #f5e6c8;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.source-list a:hover {
+    background: #d9c3a3;
+    color: #3b2a1a;
+    transform: translateY(-2px);
+}
+
+.form-wrapper {
+    max-width: 800px;          /* lebar form */
+    margin: 40px auto;         /* center horizontal */
+    padding: 30px 25px;
+    background: #fdf6ec;       /* cream vintage */
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Form elemen tetap rata kiri */
+.form-wrapper form {
+    text-align: left;
+}
+
+.form-wrapper input,
+.form-wrapper select,
+.form-wrapper textarea {
+    width: 100%;            /* tetap full-width */
+    max-width: 100%;        /* pastikan ikut lebar container */
+    padding: 12px 15px;     /* lebih lega untuk teks */
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #c3b49a;
+    background: #fff8f0;
+    color: #3b2a1a;
+    font-size: 16px;
+    box-sizing: border-box; /* pastikan padding termasuk width */
+}
+
+/* Jika ingin textarea lebih tinggi dan teks juga ikut kanan-kiri */
+textarea {
+    height: 150px;            /* lebih tinggi */
+    resize: vertical;
+}
+
+/* submit button tetap center atau bisa kanan */
+.form-wrapper input[type="submit"] {
+    display: inline-block;    /* biar bisa posisinya bebas */
+    margin-left: auto;        /* jika ingin kanan */
+    margin-right: 0;          /* kanan rata container */
+    background: #83674c;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;       /* lebih besar */
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.25s;
+}
+
+.form-wrapper input[type="submit"]:hover {
+    background: #d9c3a3;
+    color: #3b2a1a;
+}
+
